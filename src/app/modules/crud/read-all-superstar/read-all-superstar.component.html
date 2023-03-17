@@ -1,3 +1,5 @@
-<ul *ngFor="let superstar of superstars">
-  <li>{{superstar.name}}</li>
-</ul>
+<div *ngFor="let superstar of superstars">
+  <p>{{superstar.name}}</p>
+  <img [src]="superstar.image"/>
+  <p>{{superstar.image}}</p>
+</div>

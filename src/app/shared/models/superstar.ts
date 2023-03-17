@@ -20,6 +20,8 @@ export interface superstar{
 
   heel: boolean;
 
+  image: string;
+
 }
 
 // "id": 1,
