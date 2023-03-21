@@ -6,12 +6,20 @@ import { AppComponent } from './app.component';
 import { BannerComponent } from './shared/components/banner/banner.component';
 import { ReadAllSuperstarComponent } from './modules/crud/read-all-superstar/read-all-superstar.component';
 import {HttpClientModule} from "@angular/common/http";
+import { ReadAllChampionshipComponent } from './modules/crud/read-all-championship/read-all-championship.component';
+import { ReadAllTeamComponent } from './modules/crud/read-all-team/read-all-team.component';
+import { ReadAllShowComponent } from './modules/crud/read-all-show/read-all-show.component';
+import { ReadAllPriseComponent } from './modules/crud/read-all-prise/read-all-prise.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BannerComponent,
-    ReadAllSuperstarComponent
+    ReadAllSuperstarComponent,
+    ReadAllChampionshipComponent,
+    ReadAllTeamComponent,
+    ReadAllShowComponent,
+    ReadAllPriseComponent
   ],
   imports: [
     BrowserModule,

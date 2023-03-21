@@ -1,0 +1,23 @@
+div{
+  background: darkred;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+img{
+  max-width: 100%;
+}
+input, button{
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  font-size: 20px;
+  width: 150px;
+}
+button:hover{
+  border: white 3px solid;
+}

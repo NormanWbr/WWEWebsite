@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import {SuperstarService} from "../../../shared/services/superstar.service";
+import {Component, OnInit} from '@angular/core';
+import {SuperstarService} from "../../../shared/services/superstar/superstar.service";
 import {superstar} from "../../../shared/models/superstar";
 
 @Component({
@@ -7,15 +7,16 @@ import {superstar} from "../../../shared/models/superstar";
   templateUrl: './read-all-superstar.component.html',
   styleUrls: ['./read-all-superstar.component.scss']
 })
-export class ReadAllSuperstarComponent {
+export class ReadAllSuperstarComponent implements OnInit {
 
-superstars : superstar[] = [];
+  superstars: superstar[] = [];
 
-  constructor(private _superstarService : SuperstarService) { }
+  constructor(private _superstarService: SuperstarService) {
+  }
 
   ngOnInit(): void {
     this._superstarService.getAllSuperstars().subscribe(
-      (data : superstar[]) => {
+      (data: superstar[]) => {
         this.superstars = data;
       }
     )

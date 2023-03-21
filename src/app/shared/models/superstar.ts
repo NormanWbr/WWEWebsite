@@ -1,3 +1,7 @@
+import {show} from "./show";
+import {championship} from "./championship";
+import {team} from "./team";
+
 export interface superstar{
   id: number;
   name: string;
@@ -12,11 +16,11 @@ export interface superstar{
 
   prises: any[];
 
-  team: any;
+  team: team;
 
-  shows: any[];
+  shows: show[];
 
-  championships: any[];
+  championships: championship[];
 
   heel: boolean;
 

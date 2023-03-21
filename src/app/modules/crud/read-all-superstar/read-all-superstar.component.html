@@ -1,5 +1,9 @@
-<div *ngFor="let superstar of superstars">
-  <p>{{superstar.name}}</p>
-  <img [src]="superstar.image"/>
-  <p>{{superstar.image}}</p>
+<div class="superstars">
+  <div class="superstar" *ngFor="let superstar of superstars">
+    <p>{{superstar.gender}}</p>
+    <a routerLink=""><img [src]="superstar.image"/></a>
+    <p>Taille: {{superstar.height}}</p>
+    &nbsp;
+    <p>Poids: {{superstar.weight}}</p>
+  </div>
 </div>

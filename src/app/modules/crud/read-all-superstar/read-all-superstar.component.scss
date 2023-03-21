@@ -1,0 +1,18 @@
+.superstars{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.superstar{
+  background: black;
+  display: flex;
+  max-width: 20%;
+  margin: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 50px;
+  border: white 5px solid;
+}
+img{
+  max-width: 100%;
+}
